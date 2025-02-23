@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body class="bg-gradient-to-r from-[#02B5D1]  to-blue-400 min-h-screen flex flex-col items-center justify-center">
+
+    <div class=" bg-gradient-to-b from-purple-300 to-sky-300 shadow-2xl rounded-2xl p-8 w-full max-w-md">
+        <h2 class="text-center text-gray-800 text-2xl font-bold mb-6">Weather App</h2>
+        <div class="relative ">
+            <div class="flex justify-center items-center">
+                <div class="relative w-4/4">
+                    <i class="bx bx-map absolute left-4 top-3 text-gray-700"></i>
+                    <input type="text" placeholder="Enter your location" id="cityInput"
+                        class="border-2 border-gray-300 rounded-lg w-full py-2 px-10 focus:outline-blue-300">
+                    <button type="submit" id="add" class="bx bx-search-alt absolute right-4 top-3 text-gray-700 cursor-pointer  hover:text-blue-600"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <section>
+                <div>
+                    <h2 id="cityoutput" class="text-xl font-semibold my-3 "></h2>
+                    <p id="description" class="text-gray-800 mb-2"></p>
+                    <p id="temp" class="text-gray-800 mb-2"></p>
+                    <p id="wind" class="text-gray-800"></p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
